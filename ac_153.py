@@ -42,16 +42,16 @@
 
 
 # D--------------------------------------
-# h = int(input())
+h = int(input())
 
-# num = 0
-# while(1):
-#     num += 1
-#     h = h // 2
-#     if h < 1:
-#         break
+num = 0
+while(1):
+    num += 1
+    h = h // 2
+    if h < 1:
+        break
 
-# print(2 ** num - 1)
+print(2 ** num - 1)
 
 
 # E--------------------------------------
@@ -59,27 +59,27 @@
 # 体力が残り少ない敵に対しても、魔力消費量が多くてもコスパの良い魔法を使うプログラムになってしまった。
 # 完全に運だが、初めてE問題まで行けた。
 
-magic = []
-h, n = map(int, input().split())
-for _ in range(n):
-    magic.append(list(map(int, (input().split()))))
+# magic = []
+# h, n = map(int, input().split())
+# for _ in range(n):
+#     magic.append(list(map(int, (input().split()))))
 
-cost_performance = []
-for i, e in enumerate(magic):
-    cost_performance.append(float(magic[i][1]) / float(magic[i][0]))
+# cost_performance = []
+# for i, e in enumerate(magic):
+#     cost_performance.append(float(magic[i][1]) / float(magic[i][0]))
 
-min_cost = cost_performance.index(min(cost_performance))
+# min_cost = cost_performance.index(min(cost_performance))
 
-num = 0
-magic_cost = 0
-while(1):
-    num =+ 1
-    magic_cost =+ magic[min_cost][1]
-    h -= magic[min_cost][0]
-    print(magic_cost)
-    print(h)
-    print('______________')
-    if h < 1:
-        break
+# num = 0
+# magic_cost = 0
+# while(1):
+#     num =+ 1
+#     magic_cost =+ magic[min_cost][1]
+#     h -= magic[min_cost][0]
+#     print(magic_cost)
+#     print(h)
+#     print('______________')
+#     if h < 1:
+#         break
 
-print(magic_cost)
+# print(magic_cost)
